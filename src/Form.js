@@ -62,6 +62,7 @@ const Form = (props) => {
                         value={year}
                         onChange={YearInputValue}
                         el={year}
+                        max={currentYear}
                         number={currentYear}
                          style={{borderColor: year > currentYear || year < 1 ? "red" : ""}}
                          text={"Must be a valid year"}
